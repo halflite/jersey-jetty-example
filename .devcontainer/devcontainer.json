@@ -1,0 +1,35 @@
+{
+	"name": "jetty-jersey-example",
+	"dockerFile": "Dockerfile",
+	"forwardPorts": [
+		8080
+	],
+	"mounts": [
+		"source=${localWorkspaceFolder}/.m2,target=/root/.m2,type=bind,consistency=cached"
+	],
+	"settings": {
+		"editor.tabSize": 2,
+		"java.home": "/usr/lib/jvm/java-11-amazon-corretto",
+    "java.format.settings.profile": "GoogleStyle",
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+     "java.completion.favoriteStaticMembers": [
+      "org.junit.Assert.*",
+      "org.mockito.Mockito.*",
+      "org.assertj.core.api.Assertions.*"
+    ],
+    "[java]": {
+      "editor.formatOnSave": true,
+    }
+	},
+	"extensions": [
+		"redhat.java",
+		"redhat.vscode-xml",
+		"redhat.vscode-yaml",
+		"redhat.fabric8-analytics",
+		"redhat.vscode-commons",
+		"vscjava.vscode-java-pack",
+		"ms-ceintl.vscode-language-pack-ja",
+		"ms-azuretools.vscode-docker",
+    "mhutchie.git-graph"
+	]
+}
